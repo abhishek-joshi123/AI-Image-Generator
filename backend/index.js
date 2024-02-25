@@ -15,7 +15,7 @@ const port = process.env.PORT || 5000;
 
 
 const corsOptions = {
-    origin: [process.env.CORS_ORIGIN, "https://ai-image-generator-cyan-iota.vercel.app"]
+    origin: [process.env.CORS_ORIGIN]
 };
 
 app.use(cors(corsOptions));
