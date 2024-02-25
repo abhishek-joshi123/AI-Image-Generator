@@ -66,11 +66,6 @@ export default function Home() {
   useEffect(() => {
     GetAllImages();
   }, []);
-
-    useEffect(() => {
-      fetch("https://ai-image-generator-backend-eta.vercel.app")
-        .then((res) => res.json())
-    },[]);
   
 
   return (
