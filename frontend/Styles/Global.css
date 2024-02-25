@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textField {
+    @apply p-2 indent-2 outline-none border-[5px] border-gray-800 rounded-lg bg-gray-600/50
+  }
+}
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(19, 24, 32);
+  }
