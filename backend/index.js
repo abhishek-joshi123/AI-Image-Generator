@@ -14,11 +14,15 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 
-const corsOptions = {
-    origin: [process.env.CORS_ORIGIN]
-};
+// const corsOptions = {
+//     origin: [process.env.CORS_ORIGIN]
+// };
 
-app.use(cors(corsOptions));
+app.use(cors({
+    origin: [process.env.CORS_ORIGIN]
+}));
+
+// app.use(cors(corsOptions));
 
 app.use(express.json({limit: '50mb'}));
 
