@@ -100,7 +100,7 @@ export default function Home() {
         </form>
       </div>
       <div className="flex justify-center items-center p-4">
-        <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 grid-flow-dense h-screen overflow-scroll">
+        <div className={`grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 grid-flow-dense h-screen ${Images.length == 0  ? 'overflow-none' : 'overflow-scroll'}`}>
           {Images?.map((item) => (
             <div key={item._id} className="relative group cursor-pointer">
               <Image

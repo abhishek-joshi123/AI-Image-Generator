@@ -46,14 +46,13 @@ function Header() {
                 alt="logo"
                 height={50}
                 width={250}
-                className='filter brightness-0 invert grayscale'
                 />
             </Link>
         </div>
-        <div className="flex text-xs md:text-base divide-x items-center text-gray-300">
+        <div className="flex text-xs md:text-base divide-x items-center">
             <Link 
                 href='/GenerateImage'
-                className="px-2 font-light text-right"
+                className="px-2 font-light text-right text-white"
             >
                 Generate Image 
             </Link>
@@ -61,13 +60,13 @@ function Header() {
                 !user ? (
                     <Link 
                         href='/Signup'
-                        className="px-2 font-light"
+                        className="px-2 font-light text-white"
                     >
                         Signup
                     </Link>
                 ) : (
                     <button 
-                        className="px-2 font-light"
+                        className="px-2 font-light text-white"
                         onClick={handleOpen}
                     >
                         Logout
