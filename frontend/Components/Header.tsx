@@ -49,10 +49,10 @@ function Header() {
                 />
             </Link>
         </div>
-        <div className="flex text-xs md:text-base divide-x items-center">
+        <div className="flex text-xs md:text-base divide-x justify-center items-center">
             <Link 
                 href='/GenerateImage'
-                className="px-2 font-light text-right text-white"
+                className="px-2 mx-1 font-light text-right text-white"
             >
                 Generate Image 
             </Link>
@@ -60,13 +60,13 @@ function Header() {
                 !user ? (
                     <Link 
                         href='/Signup'
-                        className="px-2 font-light text-white"
+                        className="px-2 mx-1 font-light text-white"
                     >
                         Signup
                     </Link>
                 ) : (
                     <button 
-                        className="px-2 font-light text-white"
+                        className="px-2 mx-1 font-light text-white"
                         onClick={handleOpen}
                     >
                         Logout
